@@ -1,7 +1,10 @@
 module StructuralUnits
 
-# Write your package code here.
-using Unitful
+using Reexport
+@reexport using Unitful
+@reexport using UnitfulLatexify
+
+export ft, inch, kip, ksi
 
 Unitful.register(StructuralUnits)
 @unit kip "kip" Kip 1000*u"lbf" false
@@ -22,6 +25,10 @@ Unitful.promote_unit(::S, ::T) where {S<:StructuralUnits.ForceUnits, T<:Structur
 Unitful.promote_unit(::S, ::T) where {S<:StructuralUnits.MomentUnits, T<:StructuralUnits.MomentUnits} = u"kip*ft"
 Unitful.promote_unit(::S, ::T) where {S<:StructuralUnits.StressUnits, T<:StructuralUnits.StressUnits} = u"ksi"
 
+const ft = u"ft"
+const inch = u"inch"
+const kip = u"kip"
+const ksi = u"ksi"
 
 const localpromotion = copy(Unitful.promotion)
 function __init__()
