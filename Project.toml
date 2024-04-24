@@ -3,8 +3,12 @@ uuid = "ec81c399-378c-4a82-baa1-80fb2fc85b6c"
 authors = ["Cole Miller"]
 version = "1.0.0-DEV"
 
+[deps]
+Unitful = "1986cc42-f94f-5a68-af5c-568840ba703d"
+
 [compat]
 julia = "1.10"
+Unitful = "^1"
 
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
