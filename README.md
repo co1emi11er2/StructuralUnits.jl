@@ -9,9 +9,11 @@
 
 ## Introduction
 
-This is a package for Structural Engineers in the US. It is a small package that extends the [Unitful.jl](https://github.com/PainterQubits/Unitful.jl) package. It exports a few units and changes promotion defaults in the Unitful package. It re-exports [Unitful](https://github.com/PainterQubits/Unitful.jl) and [UnitfulLatexify](https://github.com/gustaphe/UnitfulLatexify.jl), so there is no need to call `Using Unitful`. 
+This is a package for Structural Engineers in the US. It is a small package that extends the [Unitful.jl](https://github.com/PainterQubits/Unitful.jl) package. It exports a few units and changes promotion defaults in the Unitful package. It re-exports [Unitful](https://github.com/PainterQubits/Unitful.jl) and [UnitfulLatexify](https://github.com/gustaphe/UnitfulLatexify.jl), so there is no need to call `Using Unitful`.
 
 ## Defined Units
+
+Below are a few tables that specify the constants that are exported by the package. These constants can then be used throughout your project.
 
 ### Length
 
