@@ -4,14 +4,14 @@ using Reexport
 @reexport using Unitful
 @reexport using UnitfulLatexify
 
-export ft, inch, kip, ksi, klf, plf, mph, kcf, pcf, °
+export ft, inch, kip, ksi, ksf, klf, plf, mph, kcf, pcf, °
 
 Unitful.register(StructuralUnits)
 @unit kip "kip" Kip 1000*u"lbf" false
 @unit ksi "ksi" KSI 1*u"kip"/(1*u"inch^2") false
 @unit ksf "ksf" KSF 1*u"kip"/(1*u"ft^2") false
 @unit klf "klf" KLF 1*u"kip"/(1*u"ft") false
-@unit plf "klf" KLF 1*u"lbf"/(1*u"ft") false
+@unit plf "plf" PLF 1*u"lbf"/(1*u"ft") false
 @unit mph "mph" MPH 1*u"mi"/(1*u"hr") false
 @unit kcf "kcf" KCF 1*u"kip"/(1*u"ft^3") false
 @unit pcf "pcf" PCF 1*u"lbf"/(1*u"ft^3") false
@@ -38,6 +38,7 @@ const ft = u"ft"
 const inch = u"inch"
 const kip = u"kip"
 const ksi = u"ksi"
+const ksf = u"ksf"
 const klf = u"klf"
 const plf = u"plf"
 const mph = u"mph"
