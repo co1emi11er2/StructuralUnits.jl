@@ -5,6 +5,7 @@ using Reexport
 @reexport using UnitfulLatexify
 
 export ft, inch, kip, ksi, ksf, klf, plf, mph, kcf, pcf, °
+export to_ft, to_inch, to_inch2, to_pcf, to_kcf, to_plf, to_klf, to_ksi, to_mph, to_deg
 
 Unitful.register(StructuralUnits)
 @unit kip "kip" Kip 1000*u"lbf" false
@@ -45,6 +46,8 @@ const mph = u"mph"
 const kcf = u"kcf"
 const pcf = u"pcf"
 const ° = u"°"
+
+include("Conversions.jl")
 
 const localpromotion = copy(Unitful.promotion)
 function __init__()
