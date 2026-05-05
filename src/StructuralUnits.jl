@@ -2,7 +2,6 @@ module StructuralUnits
 
 using Reexport
 @reexport using Unitful
-@reexport using UnitfulLatexify
 
 export ft, inch, kip, ksi, ksf, klf, plf, mph, kcf, pcf, °
 export to_ft, to_inch, to_inch2, to_pcf, to_kcf, to_plf, to_klf, to_ksi, to_mph, to_deg
